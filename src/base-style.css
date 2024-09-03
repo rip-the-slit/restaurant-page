@@ -47,6 +47,10 @@ body {
     background: var(--bg-green);
 }
 
+img {
+  background: var(--border-green);
+}
+
 header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -65,4 +69,8 @@ nav {
 nav button {
   background: var(--bg-green);
   border: 1px solid var(--border-green);
+}
+
+#content {
+  padding: 40px;
 }
