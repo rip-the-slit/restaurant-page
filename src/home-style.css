@@ -15,6 +15,14 @@
 .reviews {
     margin: 40px auto;
     max-width: 700px;
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    overflow: hidden;
 }
 
 .reviews h3 {
@@ -24,12 +32,17 @@
 }
 
 .reviews ul {
+    width: max-content;
     list-style-type: none;
     padding: 0;
     display: flex;
     gap: 20px;
     height: 170px;
-    overflow: hidden;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    to {transform: translate(calc(-50% - 10px));}
 }
 
 .reviews li {
