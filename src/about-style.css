@@ -39,6 +39,7 @@
     border: 0;
     margin: 4px;
     border-radius: 2px;
+    padding: 3px;
 }
 
 #close-update:hover {
