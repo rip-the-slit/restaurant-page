@@ -20,6 +20,16 @@
     background: #a3e635;
     padding-left: 10px;
     align-items: center;
+    overflow: hidden;
+}
+
+.closing {
+    animation: shrink 300ms cubic-bezier(.56,.01,.16,.89) forwards;
+}
+
+@keyframes shrink {
+    30% {color: transparent;}
+    to {height: 0; color: transparent;}
 }
 
 #close-update {

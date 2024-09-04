@@ -14,7 +14,10 @@ export function buildAboutPage() {
                 button.innerHTML += closeIcon
             }
             const closeUpdateNotice = function() {
-                content.removeChild(figure)
+                figure.classList.add('closing')
+                setTimeout(() => {
+                    content.removeChild(figure)
+                }, 1000);
             }
 
             button.id = 'close-update'
