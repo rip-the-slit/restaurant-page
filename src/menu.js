@@ -70,6 +70,7 @@ export function buildMenuPage() {
                         rating.classList.add('rating')
                         addFullStars()
                         addEmptyStars()
+                        rating.innerHTML += `Rating: ${item.rating} stars`
                         div.appendChild(rating)
                     }
                     const addPriceTag = function() {
