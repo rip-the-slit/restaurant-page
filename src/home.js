@@ -1,3 +1,5 @@
+import dollarSign from './assets/dollar.png'
+
 export function buildHomePage() {
     const content = document.getElementById('content')
     
@@ -10,8 +12,10 @@ export function buildHomePage() {
             hero.appendChild(div)
         }
         const addImage = function() {
-            const img = document.createElement('img')
-            img.alt = 'dollar sign illustration'
+            const img = document.createElement('div')
+            img.style.background = `url(${dollarSign})`
+            img.style.backgroundSize = '140%'
+            img.style.backgroundPositionX = '10px'
             hero.appendChild(img)
         }
 
