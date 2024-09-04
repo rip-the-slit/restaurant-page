@@ -1,0 +1,36 @@
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid #a3e635;
+}
+
+.about-us div {
+    align-self: center;
+    margin-left: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.update {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    height: 30px;
+    background: #a3e635;
+    padding-left: 10px;
+    align-items: center;
+}
+
+#close-update {
+    font-size: 0;
+    align-self: stretch;
+    background: transparent;
+    border: 0;
+    margin: 4px;
+    border-radius: 2px;
+}
+
+#close-update:hover {
+    background: #bef264;
+}
