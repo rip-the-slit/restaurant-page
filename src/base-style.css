@@ -52,6 +52,27 @@ body {
 #logo {
   font-family: "Dela Gothic One", sans-serif;
   font-size: 1.2rem;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+#logo {
+    text-decoration: underline;
+    background: linear-gradient(to right, #6366f1, #0ea5e9 , #a3e635, #f43f5e, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation { /* everything related to this animation is borrowed from a Austen Holland stackoverflow answer, thanks to him*/
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
 img {
