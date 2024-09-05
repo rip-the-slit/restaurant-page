@@ -14,8 +14,8 @@ export function buildHomePage() {
         const addImage = function() {
             const img = document.createElement('div')
             img.style.background = `url(${dollarSign})`
-            img.style.backgroundSize = '140%'
-            img.style.backgroundPositionX = '10px'
+            img.style.backgroundSize = '135%'
+            img.style.backgroundPositionX = '15px'
             hero.appendChild(img)
         }
 

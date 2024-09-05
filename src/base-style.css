@@ -45,6 +45,13 @@ body {
     --bg-green: #d9f99d;
     --border-green: #a3e635;
     background: var(--bg-green);
+    font-family: "Sora", system-ui;
+    font-size: 0.9rem;
+}
+
+#logo {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 1.2rem;
 }
 
 img {
