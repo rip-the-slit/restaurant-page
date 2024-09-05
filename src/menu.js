@@ -33,7 +33,7 @@ export function buildMenuPage() {
                                 1,
                                 cheeseburger),
                         new Item('Chicken Club',
-                                'Crispy chicken breast, bacon, lettuce, and mayo on whole wheat bread',
+                                'Chicken, bacon, lettuce, and mayo on whole wheat bread',
                                 3,
                                 chickenClub),
                         new Item('Diner Fries',
