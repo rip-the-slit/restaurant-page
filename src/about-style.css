@@ -45,3 +45,9 @@
 #close-update:hover {
     background: #bef264;
 }
+
+.attribution {
+    position: absolute;
+    right: 40px;
+    bottom: 5px;
+}

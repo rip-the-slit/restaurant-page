@@ -1,4 +1,5 @@
 import closeIcon from './assets/close.svg'
+import womanGivingOrder from './assets/2149106377.jpg'
 
 export function buildAboutPage() {
     const content = document.getElementById('content')
@@ -59,7 +60,8 @@ export function buildAboutPage() {
         }
         const addImage = function() {
             const img = document.createElement('img')
-            img.alt = 'us'
+            img.alt = 'woman giving order'
+            img.src = womanGivingOrder
             div.appendChild(img)
         }
 
@@ -67,5 +69,12 @@ export function buildAboutPage() {
         buildText()
         addImage()
         content.appendChild(div)
+    })()
+
+    const addImageAttribution = (function() {
+        const attribution = document.createElement('div')
+        attribution.innerHTML = `<a href="https://www.freepik.com/free-photo/woman-giving-order-curbside-pickup_18737050.htm#fromView=search&page=2&position=8&uuid=feb618f6-3225-420e-bc41-78103a1b1e4a">Image by freepik</a>`
+        attribution.classList.add('attribution')
+        content.appendChild(attribution)
     })()
 }
