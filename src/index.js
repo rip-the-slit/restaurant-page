@@ -12,9 +12,13 @@ function cleanContent() {
 }
 
 function bindEvents(target, callback) {
-    target.addEventListener('click', () => {
+    target.addEventListener('click', function (e) {
         cleanContent()
         callback()
+        e.target.parentElement.classList.add('expanding')
+        setTimeout(() => {
+            e.target.parentElement.classList.remove('expanding')
+        }, 300);
     })
 }
 
